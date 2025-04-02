@@ -31,7 +31,6 @@ dependencies {
     modImplementation(libs.rconfigkt) { isTransitive = false }
     modImplementation(libs.rlib)
     modImplementation(libs.olympus)
-    modImplementation(libs.discordipc)
 
     include(libs.hypixelapi)
     include(libs.skyblockapi)
