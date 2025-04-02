@@ -1,0 +1,26 @@
+{
+    "schemaVersion": 1,
+    "id": "examplemod",
+    "version": "${version}",
+    "name": "ExampleMod",
+    "description": "",
+    "authors": [ ],
+    "contact": { },
+    "license": "All-Rights-Reserved",
+    "environment": "client",
+    "entrypoints": {
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "com.example.mod.ExampleMod"
+            }
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.16.10",
+        "fabric": "*",
+        "minecraft": "1.21.5",
+        "hypixel-mod-api": ">=1.0.1",
+        "fabric-language-kotlin": ">=1.12.3"
+    }
+}
