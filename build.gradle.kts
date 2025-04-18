@@ -11,6 +11,7 @@ repositories {
     maven(url = "https://repo.hypixel.net/repository/Hypixel/")
     maven(url = "https://api.modrinth.com/maven")
     maven(url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
+    maven(url = "https://maven.nucleoid.xyz")
     mavenCentral()
     mavenLocal()
 }
@@ -28,16 +29,19 @@ dependencies {
     modImplementation(libs.hypixelapi)
     modImplementation(libs.skyblockapi)
     modImplementation(libs.rconfig)
-    modImplementation(libs.rconfigkt) { isTransitive = false }
+    modImplementation(libs.rconfigkt)
     modImplementation(libs.rlib)
     modImplementation(libs.olympus)
+    modImplementation(libs.meowdding.lib)
+    implementation(libs.repo)
 
     include(libs.hypixelapi)
     include(libs.skyblockapi)
     include(libs.rconfig)
-    include(libs.rconfigkt) { isTransitive = false }
+    include(libs.rconfigkt)
     include(libs.rlib)
     include(libs.olympus)
+    include(libs.meowdding.lib)
 
     modRuntimeOnly(libs.devauth)
     modRuntimeOnly(libs.modmenu)
